@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Newsletter</title>
+</head>
+<body>
+    <form class="form-newsletter" name="newsletter" method="POST" data-netlify="true">
+        <p>NewsLetter</p>
+
+        <p>
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name"> 
+        </p>
+        <p>
+            <label for="email">Your Email</label>
+            <input type="email" name="email"> 
+        </p>
+        <p>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="40" rows="10"></textarea>
+        </p>
+        <p>
+            <button type="submit">Send</button>
+        </p>
+    </form>
+
+    <script src="./main.js"></script>
+</body>
+</html>
