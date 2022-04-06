@@ -105,8 +105,8 @@ input[type=submit] {
     align-items: center;
     text-align: center;
     gap: 30px;
-    height: 200px;
-    border: 2px solid gold;
+    height: 180px;
+    border: none;
 }
 
 .container-btn img{
@@ -118,19 +118,74 @@ input[type=submit] {
 }
 
 .event-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: #4D7D7D;
     position: absolute;
-    right: 10px;
-    top: 140px;
+    right: 5%;
+    top: 120px;
     color: #fff;
+    font-family: HelveticaNeue;
+    font-size: 16px;
     width: 149px;
     height: 48px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
     
+    
 }
 
-.event-btn:hover{
+.event-btn:hover {
     background-color: #1b4848;
 }
+
+hr{
+    border: none;
+    width: 90%;
+    height: 2px;
+    background-color: #345454;
+    
+}
+
+
+
+
+
+
+/* Skapa egen cirkel, plustecken byter ej färg vid hover */
+
+.circle{
+    border:none;
+    width:20px;
+    height:20px;
+    border-radius:100%;
+    position:relative;
+    margin:4px;
+    display:inline-block;
+    vertical-align:middle;
+    background-color:#fff;
+  }
+  .circle.plus:before,
+  .circle.plus:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #4D7D7D;
+      
+  }
+  .circle.plus:before{
+      width: 2px;
+      margin: 5px auto;
+  }
+  .circle.plus:after{
+      margin: auto 5px;
+      height: 2px;
+  }
+
+
