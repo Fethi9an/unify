@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+}
+
+.error {
+    margin: 10px;
+    color: rgb(207, 15, 15);
+    font-weight: 700;
+    font-size: large;
+    text-decoration: underline;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 10px;
+    border: 2px solid black;
+    background-color: #dfdfdf;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: #98b4be;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+form h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+input[type=text], [type=email], [type=submit]{
+    border: none;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+}
+
+#subject{
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+
+.input-date-time{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+textarea{
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.submit-btn{
+    text-align: center; 
+}
+
+input[type=submit]:hover{
+    background-color: #9f98bf;
+}
+
+input[type=submit] {
+    width: 100px;
+    color: #fff;
+    background-color: #897dc0; 
+    border: none;
+}
+
+@media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (min-width: 1024px) {
+  
+}
+
+/*NEWSLETTER*/
+
+.form-newsletter{
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 100px auto;
+}
+
