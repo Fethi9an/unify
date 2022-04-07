@@ -10,84 +10,138 @@ body{
     text-decoration: underline;
 }
 
-.container{
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+#page-container {
+    padding-bottom: 2.5rem;
+}
+
+.flexbox-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
+}
+
+.flexbox-item {
+    width: 300px;
     margin: 10px;
-    border: 2px solid black;
+    border: 3px solid #333;
     background-color: #dfdfdf;
-    text-align: center;
 }
 
-form{
+.flexbox-item-1 {
+    min-height: 100px;  
+}
+
+.flexbox-item-2 {
+    min-height: 300px;
+}
+
+.flexbox-item-3 {
+    min-height: 300px;
+}
+
+.unify-logo {
     display: flex;
-    flex-direction: column;
-    background-color: #98b4be;
-    color: #fff;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    text-align: left;
-}
-
-form h2{
-    text-align: center;
-    font-size: 40px;
-}
-
-input[type=text], [type=email], [type=submit]{
-    border: none;
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 10px;
-    
-}
-
-#subject{
-    margin: 10px;
-    padding: 12px 20px;
-    border-radius: 10px;
-}
-
-
-.input-date-time{
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    box-sizing: border-box;
-}
-
-textarea{
-    margin: 10px;
-    border-radius: 10px;
-}
-
-.submit-btn{
-    text-align: center; 
-}
-
-input[type=submit]:hover{
-    background-color: #9f98bf;
-}
-
-input[type=submit] {
-    width: 100px;
-    color: #fff;
-    background-color: #897dc0; 
-    border: none;
+    justify-content: center;
+    background-color: #404040;
 }
 
 @media screen and (min-width: 768px) {
-  
+ 
 }
 
-@media screen and (min-width: 1024px) {
-  
+@media screen and (min-width: 960px) {
+    .flexbox-container {
+        flex-direction: row;
+        justify-content: center;
+    }    
 }
+
+@media screen and (min-width: 1200px) {
+    
+}
+
+/* Navigation */
+nav a {
+    color: pink;
+    text-decoration: none;
+}
+  
+#hamitems a {
+    padding: 10px;
+    color: #fff; /*Färg på texten i menyn*/
+    background-color: #404040;
+    text-align: center;
+}
+#hamitems a:hover {
+    background: #b3b3b3;
+}
+  
+#hamnav label,
+#hamburger {
+    display: none;
+}
+  
+#hamnav label {
+    display: flex;
+    color: #fff; 
+    background: #404040;
+    padding: 10px;
+}
+#hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+  
+#hamitems {
+    display: none;
+}
+#hamnav input:checked ~ #hamitems {
+    display: block;
+}
+  
+@media screen and (min-width: 768px) {
+    #hamnav {
+      width: 100%;
+      background: #404040; /*Meny färg*/
+      list-style: none;
+    }
+  
+    #hamnav label {
+      display: none;
+    }
+  
+    #hamitems {
+      display: flex;
+      text-align: center;
+      width: 450px;
+      text-decoration: none;
+    }
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    padding: 2.5rem;
+}
+
 
 /*NEWSLETTER*/
 

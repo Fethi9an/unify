@@ -4,48 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Unify</title>
 </head>
 <body>
-    <div class="container">
-        <form name="unify" method="POST" data-netlify="true">
-            <h2>Create Event</h2>
-    
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name">
-            <span id="name-error" class="error"></span>
-    
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email"  placeholder="Enter your email" required>
-            <span id="email-error" class="error"></span>
-    
-            <label for="subject">Subject</label>
-            <select name="subject" id="subject" required>
-                <option label=" "></option>
-                <option value="1">Consert</option>
-                <option value="2">Sport</option>
-                <option value="3">Hobby</option>
-            </select>
-    
-            <div class="input-date-time">
-                <label for="appt">Select a time:</label>
-                <input type="time" id="appt" name="appt">
-    
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date">
+    <div id="page-container">
+        <header>
+            <div class="unify-logo">
+                <img src="./img/Group 12.png" alt="UnifyIcon">
             </div>
-    
-            <label for="comment">Description</label>
-            <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Enter text"></textarea>
-    
-            <div class="submit-btn">
-            <input type="submit" value="Submit">
+        </header>
+        <nav id="hamnav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" />
+            <div id="hamitems">
+              <a href="/index.html">Min Profil</a>
+              <a href="/Portfolio.html">Evenemang</a>
+              <a href="/team.html">Team Unify</a>
+              <a href="/contact.html">Kontakt</a>
             </div>
-            
-        </form>
+        </nav>
+        
+        <div class="flexbox-container">
+            <div class="flexbox-item flexbox-item-1">
+                <p>I Blickfånget</p>
+            </div>
+        </div>
+        <div class="flexbox-container">
+            <div class="flexbox-item flexbox-item-2">
+                <p>Evenemang</p>
+            </div>
+            <div class="flexbox-item flexbox-item-3">
+                <p>Evenemang</p>
+            </div>
+        </div>
+    
+        <footer><p>Copyright &copy; 2022 Awsome Java21 & UX Design</p></footer>
     </div>
-
+    
     <script src="./main.js"></script>
 </body>
 </html>
