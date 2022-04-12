@@ -1,3 +1,19 @@
+//Hamburger meny
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+
+//Skapa event knapp
+document.querySelector('#event-btn')
+    .addEventListener('click', () => {
+        window.location.href = 'form.html';
+    });
+
+
+
 console.log('main.js file')
 
 var nameInput = document.getElementById('name');

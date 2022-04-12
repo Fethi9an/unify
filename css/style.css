@@ -1,7 +1,3 @@
-body{
-    margin: 0;
-}
-
 .error {
     margin: 10px;
     color: rgb(207, 15, 15);
@@ -18,6 +14,7 @@ body{
 
 body {
     margin: 0;
+    padding: 0;
     position: relative;
     min-height: 100vh;
 }
@@ -72,62 +69,168 @@ body {
     
 }
 
-/* Navigation */
-nav a {
-    color: pink;
-    text-decoration: none;
-}
-  
-#hamitems a {
-    padding: 10px;
-    color: #fff; /*Färg på texten i menyn*/
-    background-color: #404040;
-    text-align: center;
-}
-#hamitems a:hover {
-    background: #b3b3b3;
-}
-  
-#hamnav label,
-#hamburger {
-    display: none;
-}
-  
-#hamnav label {
+/*Header*/
+.navbar {
     display: flex;
-    color: #fff; 
-    background: #404040;
-    padding: 10px;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem  1rem;
+    background-color: #fff;
+    color: white;
 }
-#hamitems a {
-    box-sizing: border-box;
-    display: block;
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    cursor: pointer;
+}
+
+.navbar-links {
+    display: none;
     width: 100%;
 }
-  
-#hamitems {
-    display: none;
+
+.navbar-links ul {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
-#hamnav input:checked ~ #hamitems {
+
+.navbar-links ul li {
+    text-align: center; 
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    width: auto;
     display: block;
+    text-decoration: none;
+    color: #4C2F11;
+    font-weight: bold;
+    padding: 1rem;
 }
-  
-@media screen and (min-width: 768px) {
-    #hamnav {
-      width: 100%;
-      background: #404040; /*Meny färg*/
-      list-style: none;
+
+.navbar-links ul li a {
+    padding: .5rem .7rem;
+}
+
+.navbar-links.active {
+    display: flex;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 7rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.logo {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    top: 6.2rem;
+    right: .5rem;
+}
+
+.logo img{
+    width: 26px;
+    height: 26px;
+    margin: 4px;
+}
+
+#event-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #157C79;
+    color: #fff;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    width: 125px;
+    height: 36px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 2px 2px #888888;
+}
+
+#event-btn:hover {
+    background-color: #1b4848;
+}
+
+#event-btn img {
+    margin: 0px 4px 0px 0px;
+}
+
+hr{
+    border: none;
+    width: 95%;
+    height: 2px;
+    background-color: #345454;
+}
+
+
+@media screen and (min-width: 960px) {
+    .navbar {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
     }
-  
-    #hamnav label {
-      display: none;
+    
+    .toggle-button {
+        display: none;
+        position: absolute;
+        top: 7.2rem;
+        left: 2rem;
     }
-  
-    #hamitems {
-      display: flex;
-      text-align: center;
-      width: 450px;
-      text-decoration: none;
+    .navbar-links {
+        display: flex;
+        position: absolute;
+        top: 6.8rem;
+        left: 1.5rem;
+        width: auto;
+        white-space: nowrap;
+    }
+    .navbar-links ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        position: absolute;
+        left: 6rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .event-btn {
+        display: flex;
+    }
+    .logo{
+        position: absolute;
+        top: 3rem;
+        right: 2rem;
     }
 }
 
