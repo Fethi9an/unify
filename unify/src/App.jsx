@@ -6,39 +6,39 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
+  
+      <div id="page-container">
+      <div class="navbar">
+            <div class="logo">
+              <button id="event-btn"> Skapa event</button>
+            
+            </div>
+            <div class="brand-title">
+              
+            </div>
+    
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a> 
+            <div class="navbar-links">
+              <ul>
+                <li><a href="#">Konsert</a></li>
+                <li><a href="#">Quiz</a></li>
+                <li><a href="#">Mat & dryck</a></li>
+                <li><a href="#">Uteliv</a></li>
+                <li><a href="#">Kultur & Livsstil</a></li>
+                <li><a href="#">Guider</a></li>
+                <li><a href="#">Sport & Fritid</a></li>
+                <li><a href="#">Konst & Hantverk</a></li>
+                <li><a href="#">Hälsa & Skönhet</a></li>
+              </ul>
+            </div>
+            
+        </div>
+        <hr></hr>
+      </div>
   )
 }
 
