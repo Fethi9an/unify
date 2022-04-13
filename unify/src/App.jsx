@@ -8,21 +8,22 @@ function App() {
   return (
   
       <div id="page-container">
-      <div class="navbar">
-            <div class="logo">
-              <button id="event-btn"> Skapa event</button>
-            
+      <div className="navbar">
+            <div className="logo">
+              <button id="event-btn"><img src="./src/img/Addcircle.png" 
+              alt="EventBtn"/> Skapa event</button>
+            <img src="./src/img/ProfileIcon.png" alt="Profile"></img>
             </div>
-            <div class="brand-title">
-              
+            <div className="brand-title">
+            <img src="./src/img/UnifyLogo.png" alt="UnifyIcon"/>
             </div>
     
-            <a href="#" class="toggle-button">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
+            <a href="#" className="toggle-button">
+              <span className="bar"></span>
+              <span className="bar"></span>
+              <span className="bar"></span>
             </a> 
-            <div class="navbar-links">
+            <div className="navbar-links">
               <ul>
                 <li><a href="#">Konsert</a></li>
                 <li><a href="#">Quiz</a></li>
@@ -40,6 +41,17 @@ function App() {
         <hr></hr>
       </div>
   )
+  
 }
+
+//Hamburger meny
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+
+
 
 export default App
