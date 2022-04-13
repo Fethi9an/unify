@@ -1,4 +1,4 @@
-import Navbarmenu from "./Navbarmenu";
+import './style.css'
 
 function Togglebutton () {
     return(
