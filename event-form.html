@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Unify</title>
+</head>
+<body>
+    <div id="page-container">
+        <div class="navbar">
+            <div class="logo">
+              <button id="event-btn"><img src="./img/Addcircle.png" alt="EventBtn"> Skapa event</button>
+              <img src="./img/ProfileIcon.png" alt="Profile">
+            </div>
+            <div class="brand-title">
+              <img src="./img/UnifyLogo.png" alt="UnifyIcon">
+            </div>
+    
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a> 
+            <div class="navbar-links">
+              <ul>
+                <li><a href="#">Konsert</a></li>
+                <li><a href="#">Quiz</a></li>
+                <li><a href="#">Mat & dryck</a></li>
+                <li><a href="#">Uteliv</a></li>
+                <li><a href="#">Kultur & Livsstil</a></li>
+                <li><a href="#">Guider</a></li>
+                <li><a href="#">Sport & Fritid</a></li>
+                <li><a href="#">Konst & Hantverk</a></li>
+                <li><a href="#">Hälsa & Skönhet</a></li>
+              </ul>
+            </div>
+            
+        </div>
+        <hr>
+        
+        <div class="flexbox-container">
+            <form id="eventform" name="unify" method="POST" data-netlify="true">
+                <div class="form-header">
+                    <h2>Skapa Evenemang</h2>
+                    <button id="close-back"><img src="./img/close_black_24dp (1) 1.png" alt=""></button>
+                </div>
+                
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Evenemangets namn" required>
+                <span id="name-error" class="error"></span>
+                
+                <select name="subject" id="subject" required>
+                    <option label="Välj kategori"></option>
+                    <option value="1">Konsert</option>
+                    <option value="2">Quiz</option>
+                    <option value="3">Mat & Dryck</option>
+                    <option value="4">Kultur & Livsstil</option>
+                    <option value="5">Guider</option>
+                    <option value="6">Sport & Fritid</option>
+                    <option value="7">Konst & Hantverk</option>
+                    <option value="8">Hälsa & Skönhet</option>
+                </select>
+                
+                <div class="input-date-time">
+                    <label for="appt">Tid:</label>
+                    <input type="time" id="appt" name="appt">
+                    
+                    <label for="date">Datum:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                
+                <div class="box">
+                    <div class="back-img">
+                        <img src="./img/Vector 17.png" alt="">
+                    </div>
+                        <label for="textarea"></label>
+                        <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Beskrivning"></textarea>
+                        <span id="textarea-error" class="error"></span>
+                    <button class="submit-btn" type="submit" form="eventform" value="Submit">Skapa Event</button>
+                </div>
+        
+            </form>
+        </div>
+    
+        <footer><p>Copyright &copy; 2022 Awsome Java21 & UX Design</p></footer>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>

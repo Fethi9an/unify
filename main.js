@@ -9,9 +9,14 @@ toggleButton.addEventListener('click', () => {
 //Skapa event knapp
 document.querySelector('#event-btn')
     .addEventListener('click', () => {
-        window.location.href = 'form.html';
+        window.location.href = 'event-form.html';
     });
 
+//Unify Logo
+document.querySelector('.brand-title')
+    .addEventListener('click', () => {
+        window.location.href = 'index.html';
+    });
 
 
 console.log('main.js file')
@@ -45,26 +50,46 @@ function validateNameInput(event){
 nameInput.addEventListener('focus',validateNameInput);
 nameInput.addEventListener('blur',validateNameInput);
 
-//Email
-var emailInput = document.getElementById('email');
+//Textarea
+var textareaInput = document.getElementById('textarea');
 
-console.log(emailInput);
+console.log(textareaInput);
 
-function validateEmailInput(event){
-    console.log('name input blur');
-    var emailInputVaule = event.target.value;
-    console.log('value:', emailInputVaule);
+function validateTextareaInput(event){
+    console.log('textarea input blur');
+    var textareaInputVaule = event.target.value;
+    console.log('value:', textareaInputVaule);
 
-    var emailInputError = document.getElementById('email-error');
+    var textareaInputError = document.getElementById('textarea-error');
 
-    if(emailInputVaule == '') return;
+    if(textareaInputVaule == '') return;
 
-    if(!emailInputVaule.includes("@")){
-        emailInputError.innerText = 'Must be a vaild email';
+    if(textareaInputVaule.length <6){
+        textareaInputError.innerText = 'Textarea should have at least 6 characters';
     } else {
-        emailInputError.innerText = '';
+        textareaInputError.innerText = '';
     }
 }
 
-emailInput.addEventListener('focus', validateEmailInput);
-emailInput.addEventListener('blur', validateEmailInput);
+textareaInput.addEventListener('focus', validateTextareaInput);
+textareaInput.addEventListener('blur', validateTextareaInput);
+
+const form = document.getElementById('eventform')
+const eventName = document.getElementById('name')
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    checkInputs();
+});
+
+function checkInputs() {
+    const eventNameValue = eventName.value.trim();
+
+    if(eventNameValue === '') {
+        setErrorFor(eventName, 'Username cannot be blank')
+    } else {
+        setSuccessFor(eventName);
+    }
+}
+

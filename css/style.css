@@ -246,6 +246,113 @@ footer {
 }
 
 
+/*Event-form*/
+form{
+
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    width: 376px;
+    height: auto;
+}
+
+.form-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+#close-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #fff;
+    border: none;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+}
+
+form h2{
+    margin-top: 20px;
+    text-align: start;
+    color: #4C2F11;
+    font-size: 30px;
+}
+
+input[type=text], [type=submit]{
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 2px 6px #888888;
+}
+
+#subject{
+    padding: 10px 10px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #FDF0E1;
+    box-shadow: 1px 2px 6px #888888;
+    border: none;
+}
+
+
+.input-date-time{
+    display: inline;
+    justify-content: center;
+    gap: 10px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 340px;
+}
+.back-img {
+    position: relative;
+    z-index: 0;
+    width: 376px;
+    height: 300px;
+    object-fit: contain;
+}
+
+textarea{
+    position: absolute;
+    z-index: 1;
+    border-radius: 10px;
+    width: 340px;
+    height: 140px;
+    padding: 10px;
+}
+
+.submit-btn{
+    position: absolute;
+    text-align: center;
+    width: 330px;
+    z-index: 2;
+    top: 43rem;
+}
+
+.submit-btn:hover{
+    background-color: #157C79;
+}
+
+
 /*NEWSLETTER*/
 
 .form-newsletter{
