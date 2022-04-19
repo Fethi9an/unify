@@ -1,7 +1,7 @@
 import './style.css'
 
 function Navbarmenu () {
-    
+
     return (
         <div className="navbar-links">
               <ul>
