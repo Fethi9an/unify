@@ -3,19 +3,24 @@ import './normalize.css'
 import './App.css'
 import Topnavbar from './containers/Topnavbar'
 import Footer from './components/Footer/footer'
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Home from './Pages/Home'
+import EventForm from './Pages/EventForm'
 
 function App() {
-  
   return (
-  
-      <div id="page-container">
-        <Topnavbar/>
-        <hr></hr>
-        <p id='blickf'>I Blickfånget</p>
-        <Footer />
-      </div>
+      <Router>
+        <div id="page-container">
+          <Topnavbar/>
+          <hr></hr>
+        </div>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/eventform" element={<EventForm/>}/>
+        </Routes>
+      </Router>
   )
-  
 }
-
 export default App
+
+
