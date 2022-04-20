@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SvgFormBackground from "../Icons/formBackground";
 import './Form.css'
 
 const Form = () => {
@@ -13,54 +14,58 @@ const Form = () => {
     console.log(event);
 }
 
-  return (
-    <div className="create">
-      <h2>Skapa event</h2>
-      <form onSubmit={handleSubmit}>
-        <label>Evenemangets namn</label>
-        <input 
-          type="text" 
-          required 
-          value={title}
-          placeholder="Skapa evenemang"
-          onChange={(e) => setTitle(e.target.value)}
-        />
+return (
+  <div className="flexbox-container">
+    <h2>Skapa event</h2>
+    <form className="eventform" onSubmit={handleSubmit}>
+      <input 
+        type="text" 
+        required 
+        value={title}
+        placeholder="Skapa evenemang"
+        onChange={(e) => setTitle(e.target.value)}
+      />
 
-        <label>Kategori</label>
-        <select
-          value={category}
-          required
-          onChange={(e) => setCategory(e.target.value)}
-        >
-          <option label="Välj kategori"></option>
-          <option value="konsert">Konsert</option>
-          <option value="quiz">Quiz</option>
-          <option value="mat&dryck">Mat & Dryck</option>
-          <option value="kultur&livsstil">Kultur & Livsstil</option>
-          <option value="guider">Guider</option>
-          <option value="sport&fritid">Sport & Fritid</option>
-          <option value="konst&hantverk">Konst & hantverk</option>
-          <option value="hälsa&skönhet">Hälsa & Skönhet</option>
-        </select>
+      <select
+      className="subject"
+        value={category}
+        required
+        onChange={(e) => setCategory(e.target.value)}
+      >
+        <option label="Välj kategori"></option>
+        <option value="konsert">Konsert</option>
+        <option value="quiz">Quiz</option>
+        <option value="mat&dryck">Mat & Dryck</option>
+        <option value="kultur&livsstil">Kultur & Livsstil</option>
+        <option value="guider">Guider</option>
+        <option value="sport&fritid">Sport & Fritid</option>
+        <option value="konst&hantverk">Konst & hantverk</option>
+        <option value="hälsa&skönhet">Hälsa & Skönhet</option>
+      </select>
 
+      <div className="input-date-time">
         <label for="appt">Tid:</label>
         <input type="time" id="appt" name="appt"></input>
 
         <label for="date">Datum:</label>
         <input type="date" id="date" name="date"></input>
-
-        <label>Beskrivning:</label>
+      </div>
+      
+      <div className="box">
+          <SvgFormBackground className="back-img"/>
         <textarea
           required
           value={body}
+          rows={5}
           placeholder="Beskrivning"
           onChange={(e) => setBody(e.target.value)}
         ></textarea>
-               
-        <button>Skapa event</button>
-      </form>
-    </div>
-  );
+      <button className="submit-btn" type="submit">Skapa event</button>
+      </div>
+                     
+    </form>
+  </div>
+);
 }
  
 export default Form;
