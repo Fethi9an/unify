@@ -1,15 +1,21 @@
 .logo {
     display: flex;
+    flex-direction: column-reverse;
     gap: 1rem;
     position: absolute;
-    top: 6.2rem;
+    top: 6.8rem;
     right: .5rem;
   }
   
   .logo img{
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     margin: 4px;
+  }
+
+  .logo-box{
+    position: relative;
+    right: -3rem;
   }
   
   #event-btn {
@@ -41,9 +47,13 @@
         display: flex;
     }
     .logo{
+        flex-direction: row;
         position: absolute;
         top: 3rem;
         right: 2rem;
+    }
+    .logo-box{
+      right: 0;
     }
   }
   
