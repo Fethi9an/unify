@@ -1,16 +1,15 @@
 import './style.css'
-import addCircle from '/src/img/Addcircle.svg'
-import searchLogo from '/src/img/SearchIcon.svg'
-import profileLogo from '/src/img/ProfileIcon.svg'
+import AddCircle from '../Icons/addCircle'
+import SearchIcon from '../Icons/searchIcon'
+import ProfileIcon from '../Icons/profileIcon'
 
 function Eventbutton () {
     return (
         <div className="logo">
-              <button id="event-btn"><img src={addCircle} 
-              alt="EventBtn"/> Skapa event</button>
+              <button id="event-btn"> Skapa event</button>
               <div className='logo-box'>
-                <img src={searchLogo} alt="svg SearchIcon"/> 
-                <img src={profileLogo} alt="svg ProfileIcon"/> 
+                <SearchIcon className="icons"/>
+                <ProfileIcon className="icons"/>
               </div>
             </div>
     )
