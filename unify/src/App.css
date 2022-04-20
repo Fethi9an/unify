@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+}
+
+#page-container {
+  padding-bottom: 2.5rem;
+}
+
+hr{
+  border: none;
+  width: 95%;
+  height: 2px;
+  background-color: #345454;
+}
+
+#blickf{
+  padding: 20px;
+  font-size: 30px;
+  font-family: var(--heading-font-family);
+}
