@@ -10,6 +10,7 @@ function App() {
       <div id="page-container">
         <Topnavbar/>
         <hr></hr>
+        <p id='blickf'>I Blickfånget</p>
       </div>
   )
   
