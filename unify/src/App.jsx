@@ -2,6 +2,7 @@ import React from 'react'
 import './normalize.css'
 import './App.css'
 import Topnavbar from './containers/Topnavbar'
+import Footer from './components/Footer/footer'
 
 function App() {
   
@@ -11,6 +12,7 @@ function App() {
         <Topnavbar/>
         <hr></hr>
         <p id='blickf'>I Blickfånget</p>
+        <Footer />
       </div>
   )
   
