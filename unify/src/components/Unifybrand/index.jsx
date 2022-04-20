@@ -1,10 +1,10 @@
 import './style.css'
-import unifyLogo from '/src/img/UnifyLogo.svg'
+import SvgUnifyLogo from '../Icons/unifyLogo'
 
 function Unifybrand () {
     return (
         <div className="brand-title">
-            <img height={120} src={unifyLogo} alt="svg UnifyIcon"/> 
+            <SvgUnifyLogo className="unifyLogo"/>
         </div>
     )
 }
