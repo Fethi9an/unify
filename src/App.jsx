@@ -3,6 +3,7 @@ import './normalize.css'
 import './App.css'
 import Topnavbar from './containers/Topnavbar'
 import Footer from './components/Footer/footer'
+import Form from './components/Form/Form'
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
         <Topnavbar/>
         <hr></hr>
         <p id='blickf'>I Blickfånget</p>
+        <Form />
         <Footer />
       </div>
   )
