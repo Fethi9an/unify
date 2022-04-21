@@ -10,15 +10,6 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const event = { title, body, category };
-    let myForm = document.getElementById("pizzaOrder");
-  let formData = new FormData(myForm);
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => console.log("Form successfully submitted"))
-    .catch((error) => alert(error));
 
     console.log(event);
 }
