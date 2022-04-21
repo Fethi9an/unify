@@ -54,6 +54,10 @@ nav {
     border-radius: 10px;
   }
 
+#bar1 {
+    width: 50%;
+}
+
 
 @media screen and (min-width: 960px){
     

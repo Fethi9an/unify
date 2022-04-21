@@ -40,7 +40,7 @@ export default function Navbar() {
     </ul>
       )}
       
-      <button onClick={toggleNav} className="btn"><span className="bar"></span>
+      <button onClick={toggleNav} className="btn"><span className="bar" id="bar1"></span>
               <span className="bar"></span>
               <span className="bar"></span></button>
     </nav>
