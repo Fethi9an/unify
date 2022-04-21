@@ -83,3 +83,7 @@ z-index: 2;
 .submit-btn:hover{
 background-color: #157C79;
 }
+
+h2 {
+  font-family: var(--heading-font-family);
+}
