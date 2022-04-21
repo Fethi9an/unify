@@ -3,7 +3,7 @@ import './normalize.css'
 import './App.css'
 import Topnavbar from './containers/Topnavbar'
 import Footer from './components/Footer/footer'
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 import Home from './Pages/Home'
 import EventForm from './Pages/EventForm'
 
@@ -18,6 +18,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/eventform" element={<EventForm/>}/>
         </Routes>
+        <Footer/>
       </Router>
   )
 }
