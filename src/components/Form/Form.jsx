@@ -18,11 +18,13 @@ return (
   <div className="flexbox-container">
     <h2>Skapa event</h2>
     <form className="eventform" onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="eventform" />
       <input 
         type="text" 
         required 
         value={title}
         placeholder="Skapa evenemang"
+        name="name"
         onChange={(e) => setTitle(e.target.value)}
       />
 
@@ -58,6 +60,7 @@ return (
           value={body}
           rows={5}
           placeholder="Beskrivning"
+          name="message"
           onChange={(e) => setBody(e.target.value)}
         ></textarea>
       <button className="submit-btn" type="submit">Skapa event</button>
