@@ -39,7 +39,7 @@ export default function Navbar() {
       <li className="items">Hälsa & Skönhet</li>
     </ul>
       )}
-
+      
       <button onClick={toggleNav} className="btn"><span className="bar"></span>
               <span className="bar"></span>
               <span className="bar"></span></button>
