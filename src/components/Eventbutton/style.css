@@ -15,8 +15,18 @@
 
   .logo-box{
     position: relative;
-    right: -3rem;
+    right: -1.5rem;
+
   }
+
+  .icons{
+    width: 40px;
+    height: auto;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+
   
   #event-btn {
     display: flex;
@@ -26,11 +36,12 @@
     color: #fff;
     font-family: HelveticaNeue;
     font-size: 0.8rem;
-    width: 125px;
-    height: 36px;
+    width: 120px;
+    height: 40px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    margin-top: 25px;
   }
   
   #event-btn:hover {
@@ -41,6 +52,12 @@
     margin: 0px 4px 0px 0px;
   }
 
+  .addCircle{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
+
   @media screen and (min-width: 960px) {
     .event-btn {
         display: flex;
@@ -48,11 +65,12 @@
     .logo{
         flex-direction: row;
         position: absolute;
-        top: 3rem;
+        top: 2rem;
         right: 2rem;
     }
     .logo-box{
       right: 0;
+      top: 1.5rem;
     }
   }
   
