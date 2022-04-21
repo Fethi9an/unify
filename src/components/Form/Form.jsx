@@ -10,17 +10,15 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const event = { title, body, category };
-    const result = document.querySelector(".result");
+    let myForm = document.getElementById("pizzaOrder");
+  let formData = new FormData(myForm);
   fetch("/", {
-    body: new FormData(event.target),
     method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
   })
-    .then(() => {
-      result.innerHTML = "Success";
-    })
-    .catch((error) => {
-      result.innerHTML = `Failed: ${error}`;
-    });
+    .then(() => console.log("Form successfully submitted"))
+    .catch((error) => alert(error));
 
     console.log(event);
 }
