@@ -6,6 +6,7 @@ import Footer from './components/Footer/footer'
 import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 import Home from './Pages/Home'
 import EventForm from './Pages/EventForm'
+import Profile from './Pages/Profile'
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/eventform" element={<EventForm/>}/>
+          <Route path="/profile" element={<Profile/>}/>
+          
+
         </Routes>
         <Footer/>
       </Router>
