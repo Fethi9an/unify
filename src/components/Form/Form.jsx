@@ -17,7 +17,7 @@ const Form = () => {
 return (
   <div className="flexbox-container">
     <h2>Skapa event</h2>
-    <form className="eventform" onSubmit={handleSubmit}>
+    <form className="eventform" onSubmit={handleSubmit} method="POST" data-netlify="true">
       <input 
         type="text" 
         required 
