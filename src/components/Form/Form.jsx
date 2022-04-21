@@ -10,6 +10,17 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const event = { title, body, category };
+    const result = document.querySelector(".result");
+  fetch("/", {
+    body: new FormData(event.target),
+    method: "POST",
+  })
+    .then(() => {
+      result.innerHTML = "Success";
+    })
+    .catch((error) => {
+      result.innerHTML = `Failed: ${error}`;
+    });
 
     console.log(event);
 }
