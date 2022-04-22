@@ -2,6 +2,7 @@ import { useState } from "react";
 import SvgFormBackground from "../Icons/formBackground";
 import './Form.css'
 
+/* const Form = () => { */
 function Form() {
   const [title, setTitle] = useState(''); //input rutan är tom från början
   const [body, setBody] = useState('');
