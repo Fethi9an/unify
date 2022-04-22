@@ -2,7 +2,7 @@ import { useState } from "react";
 import SvgFormBackground from "../Icons/formBackground";
 import './Form.css'
 
-const Form = () => {
+function Form() {
   const [title, setTitle] = useState(''); //input rutan är tom från början
   const [body, setBody] = useState('');
   const [category, setCategory] = useState('');
@@ -17,8 +17,14 @@ const Form = () => {
 return (
   <div className="flexbox-container">
     <h2>Skapa event</h2>
-    <form className="eventform" onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="eventform" />
+{/*     <form className="eventform" onSubmit={handleSubmit} name="contact" method='POST' data-netlify="true" data-netlify-honeypot="bot-field"> */}
+    <form className="eventform" onSubmit="submit" name="contact" method='POST' data-netlify="true" data-netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact" />
+    
+    <div hidden>
+        <input name="bot-field" />
+    </div>
+
       <input 
         type="text" 
         required 
