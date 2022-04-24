@@ -26,46 +26,47 @@ return (
         <input name="bot-field" />
     </div>
 
-      <input 
-        type="text" 
-        required 
-        value={title}
-        placeholder="Skapa evenemang"
-        name="name"
-        onChange={(e) => setTitle(e.target.value)}
-      />
+      <div className="box">
+        <input 
+          type="text" 
+          required 
+          value={title}
+          placeholder="Evenemangets namn"
+          name="name"
+          onChange={(e) => setTitle(e.target.value)}
+        />
 
-      <select
-      className="subject"
-        value={category}
-        required
-        onChange={(e) => setCategory(e.target.value)}
-      >
-        <option label="Välj kategori"></option>
-        <option value="konsert">Konsert</option>
-        <option value="quiz">Quiz</option>
-        <option value="mat&dryck">Mat & Dryck</option>
-        <option value="kultur&livsstil">Kultur & Livsstil</option>
-        <option value="guider">Guider</option>
-        <option value="sport&fritid">Sport & Fritid</option>
-        <option value="konst&hantverk">Konst & hantverk</option>
-        <option value="hälsa&skönhet">Hälsa & Skönhet</option>
-      </select>
+        <select
+        className="subject"
+          value={category}
+          required
+          onChange={(e) => setCategory(e.target.value)}
+        >
+          <option label="Välj kategori"></option>
+          <option value="konsert">Konsert</option>
+          <option value="quiz">Quiz</option>
+          <option value="mat&dryck">Mat & Dryck</option>
+          <option value="kultur&livsstil">Kultur & Livsstil</option>
+          <option value="guider">Guider</option>
+          <option value="sport&fritid">Sport & Fritid</option>
+          <option value="konst&hantverk">Konst & hantverk</option>
+          <option value="hälsa&skönhet">Hälsa & Skönhet</option>
+        </select>
 
-      <div className="input-date-time">
-        <label for="appt">Tid:</label>
-        <input type="time" id="appt" name="appt"></input>
+        <div className="input-date-time">
+          <label for="appt">Tid:</label>
+          <input type="time" id="appt" name="appt"></input>
 
-        <label for="date">Datum:</label>
-        <input type="date" id="date" name="date"></input>
+          <label for="date">Datum:</label>
+          <input type="date" id="date" name="date"></input>
+        </div>
       </div>
-      
       <div className="box">
           <SvgFormBackground className="back-img"/>
         <textarea
           required
           value={body}
-          rows={5}
+          rows={10}
           placeholder="Beskrivning"
           name="message"
           onChange={(e) => setBody(e.target.value)}
