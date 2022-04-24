@@ -17,7 +17,6 @@ function Form() {
 
 return (
   <div className="flexbox-container">
-    <h2>Skapa event</h2>
 {/*     <form className="eventform" onSubmit={handleSubmit} name="contact" method='POST' data-netlify="true" data-netlify-honeypot="bot-field"> */}
     <form className="eventform" onSubmit="submit" name="contact" method='POST' data-netlify="true" data-netlify-honeypot="bot-field">
     <input type="hidden" name="form-name" value="contact" />

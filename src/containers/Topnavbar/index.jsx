@@ -1,14 +1,25 @@
-import Eventbutton from "../../components/Eventbutton"
-import Unifybrand from "../../components/Unifybrand"
 import './style.css'
 import Navbar from "../../components/Navbar/Navbar"
+import SearchIcon from "../../components/Icons/searchIcon"
+import ProfileIcon from "../../components/Icons/profileIcon"
+import SvgUnifyLogo from '../../components/Icons/unifyLogo'
 
 function Topnavbar () {
     return(
-        <div className="navbar">
-            <Unifybrand/>
-            <Eventbutton/>
-            <Navbar />
+        <div className='topnavbar'>
+            <div className='logo'>
+            <SvgUnifyLogo/>
+            <div className="Icons">
+                    <SearchIcon/>
+                    <ProfileIcon/>
+                </div>
+            </div>
+            <div className="navbar">
+                <Navbar />
+            </div>
+            <div>
+                <hr />
+            </div>
         </div>
     )
 }

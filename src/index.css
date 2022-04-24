@@ -9,3 +9,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  font-family: var(--heading-font-family);
+  color: var(--heading-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 41px;
+  padding: 20px;
+}
