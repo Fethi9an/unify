@@ -8,8 +8,9 @@ h2 {
   color: var(--heading-color);
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 35px;
   line-height: 41px;
+  padding-top: 6px;
 }
 
 .eventform {
@@ -27,6 +28,16 @@ h2 {
 
 .back-img {
   z-index: -1;
+}
+
+.input-date-time{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: black;
+  margin-top: 20px;
+  box-sizing: border-box;
 }
 
 .subject {
