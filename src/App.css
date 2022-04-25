@@ -21,9 +21,3 @@ hr{
   height: 2px;
   background-color: #345454;
 }
-
-#blickf{
-  padding: 20px;
-  font-size: 30px;
-  font-family: var(--heading-font-family);
-}

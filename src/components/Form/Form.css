@@ -1,18 +1,3 @@
-h2 {
-  position: absolute;
-  width: 231px;
-  height: 41px;
-  left: 25px;
-  top: 145px;
-  font-family: var(--heading-font-family);
-  color: var(--heading-color);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 41px;
-  padding-top: 6px;
-}
-
 .eventform {
   margin: 0;
   padding: 15px;

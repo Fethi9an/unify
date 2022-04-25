@@ -13,14 +13,11 @@ function App() {
       <Router>
         <div id="page-container">
           <Topnavbar/>
-          <hr></hr>
         </div>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/eventform" element={<EventForm/>}/>
           <Route path="/profile" element={<Profile/>}/>
-          
-
         </Routes>
         <Footer/>
       </Router>
